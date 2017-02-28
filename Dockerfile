@@ -52,7 +52,7 @@ WORKDIR $GHOST_SOURCE
 
 	RUN set -x \
 	&& apt-get purge -y --auto-remove \
-	&& rm Ghost-${GHOST_VERSION}.zip ../
+	&& mv Ghost-${GHOST_VERSION}.zip ../
 	
 	RUN  npm cache clean
 	RUN  rm -rf /tmp/npm*
