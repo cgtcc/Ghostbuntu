@@ -79,5 +79,5 @@ VOLUME $GHOST_CONTENT
 
 
 	EXPOSE 2368
-	CMD ["pm2", "start" , "server.js"]
+	CMD ["pm2", "start" , "$GHOST_CONTENT/server.js"]
 
