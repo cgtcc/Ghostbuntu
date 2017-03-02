@@ -25,6 +25,8 @@ WORKDIR $GHOST_SOURCE
 			gcc \
 			npm \
 			make \
+			nodejs \
+			nodejs-legacy \
 			python \
 			unzip \
 			gosu \
