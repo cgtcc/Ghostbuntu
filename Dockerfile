@@ -11,7 +11,7 @@ FROM codecoaster/docker-ubuntu-latest-lts:latest
 
 
 ENV GHOST_SOURCE /usr/src/ghost
-ENV GHOST_VERSION 0.11.4
+ENV GHOST_VERSION 0.11.7
 #ENV DEBIAN_FRONTEND noninteractive
 
 WORKDIR $GHOST_SOURCE
