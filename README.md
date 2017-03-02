@@ -1,5 +1,7 @@
 
-# Install Ghost on Ubuntu 16.04 LTS using Docker on Windows, Linux and OsX
+# Publish your blog articles on Ghost inside a Docker based on Ubuntu 16.04 LTS.
+
+##How to install Docker and Ghost
 
 <pre><a href="https://github.com/codecoaster/Ghostbuntu/blob/master/FRENCH.md">Instructions en français | French instructions</a></pre>
 
