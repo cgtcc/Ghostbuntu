@@ -7,7 +7,7 @@
 
 This is a Docker file you can use to run a blog on Ubuntu 16.04, using Ghost, <br />the best blogging script written in Node.JS.
 
-###Please note the first run may take a long time to complete, due to the install procedure taking place.  Make some coffee, grab a box of cookies and wait... ...wait... ...wait... 
+Please note the first run may take a long time to complete, due to the install procedure taking place.  Make some coffee, grab a box of cookies and wait... ...wait... ...wait... 
 
 In order to run this script, you need to install Docker, the container running your Ghost instance.  See this page for instructions on OsX, Windows and Linux : https://docs.docker.com/engine/getstarted/step_one/
 
