@@ -20,7 +20,7 @@ Une fois Docker installé, exécutez ces commandes sur un terminal :
 ###3) Compilez l'image de votre Docker
 You need to build your docker container first.  This may take over an hour to complete.  PLEASE BE PATIENT, AND DO NOT INTERRUPT THE PROCESS!
 
-<code>docker build --no-cache -t ghostbuntu .</code>
+<code>docker build -t ghostbuntu .</code>
 
 
 ###4) Vérifiez votre nouvelle instance de Docker 
