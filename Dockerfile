@@ -17,6 +17,7 @@ WORKDIR $GHOST_SOURCE
                 && apt-get update \
         && apt-get install -q -y \
                         gcc \
+                        gosu \
                         npm \
                         make \
                         nodejs-legacy \
