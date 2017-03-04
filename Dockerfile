@@ -1,9 +1,3 @@
-#This Docker script is based on https://github.com/docker-library/ghost/blob/$(fileCommit
-
-#http://support.ghost.org/supported-node-versions/
-#https://github.com/nodejs/LTS
-
-
 #Maintainer : thecodecoaster@gmail.com
 #GitRepo: https://github.com/codecoaster/docker-ghost.git
 #The ubuntu:latest tag points to the "latest LTS", since that's the version recommended for general use.
