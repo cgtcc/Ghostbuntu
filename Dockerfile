@@ -23,7 +23,6 @@ WORKDIR $GHOST_SOURCE
                         nodejs \
                         python \
                         unzip \
-                        gosu \
                         wget \
                         dialog \
                          --no-install-recommends \ 
