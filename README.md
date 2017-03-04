@@ -20,9 +20,10 @@ In order to run this script, you need to install Docker, the container running y
 
        curl -fsSL https://raw.githubusercontent.com/codecoaster/Ghostbuntu/master/install-Docker-Ubuntu.sh | sh
 
-*If you get this error : "Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock:", then do :*
+then do :*
 
-<code>sudo usermod -aG docker $USER</code>  <br />...and REBOOT!
+    sudo usermod -aG docker $USER
+#####...and REBOOT!
 
 ...this will fix your permissions, so you won't require sudo to run your Docker, a bit later...  
 
