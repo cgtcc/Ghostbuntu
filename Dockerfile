@@ -78,4 +78,5 @@ ADD docker-entrypoint.sh /run-ghost.sh
 
 RUN chmod +x /run-ghost.sh 
 
-CMD ["sh","/run-ghost.sh"]
+#CMD ["sh","/run-ghost.sh"]
+CMD ["npm", "start"]
