@@ -8,5 +8,8 @@ GitRepo: https://github.com/codecoaster/Ghostbuntu
 
 cd /usr/src/ghost;
 
-pm2 start -x index.js;
+#for,production, you can also use : 
+#pm2 start -x index.js;
+
+npm start index.js
 
