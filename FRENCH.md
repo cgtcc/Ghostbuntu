@@ -46,7 +46,7 @@ ubuntu              16.04               f49eec89601e        4 weeks ago         
 
 Ouvrez votre navigateur et rendez-vous à l'adresse <a href="http://localhost:8080">http://localhost:8080</a> afin d'admirer votre nouveau blogue (remplacez localhost par l'adresse IP de votre serveur dans le cas où votre installation ne serait pas locale; c'est à dire sur votre propre ordinateur).
 
-Si ça ne fonctionne pas, assurez-vous que le port tcp sortant 8080 est ouvert sur votre pare-feu.
+Si ça ne fonctionne pas, assurez-vous que les ports tcp sortants 8080 et 2368 sont ouverts sur votre pare-feu.
  ___________________________________________________________
 < Ayez du plaisir à blogger avec Ghost, propulsé par Docker >
  -----------------------------------------------------------
