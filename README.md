@@ -67,7 +67,7 @@ The output will look like :
 
 Open your web browser, and go to <a href="http://localhost:8080">http://localhost:8080</a> in order to appreciate your new blog engine (replace localhost with the ip address of your server, in case if you did not ran the install localy, on your own computer).
 
-If it doesn't work, make sure the ougoing tcp port 8080 is open on your firewall.  
+If it doesn't work, make sure the ougoing tcp ports 8080 and 2368 are open on your firewall.  
 
 <span>
  _____________________________________________________
