@@ -11,5 +11,5 @@ cd /usr/src/ghost;
 #for,production, you can also use : 
 #pm2 start -x index.js;
 
-npm start index.js
+npm start --production
 
