@@ -2,8 +2,12 @@
 # Publish your blog articles on Ghost inside a Docker based on Ubuntu 16.04 LTS.
 
 ##How to install Docker and Ghost
+    
+ [Instructions en français](https://github.com/codecoaster/Ghostbuntu/blob/master/FRENCH.md)
 
-    [Instructions en français](https://github.com/codecoaster/Ghostbuntu/blob/master/FRENCH.md)
+
+    
+    
 
 This is a Docker file you can use to run a blog on Ubuntu 16.04, using Ghost, <br />the best blogging script written in Node.JS.
 
