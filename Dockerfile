@@ -64,17 +64,11 @@ ENV GHOST_CONTENT  /var/lib/ghost
 
 VOLUME $GHOST_CONTENT
 
-#       COPY docker-entrypoint.sh /entrypoint.sh
-#       ENTRYPOINT ["/entrypoint.sh"]
-
-
+COPY docker-entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 
         EXPOSE 2368
 #       CMD ["pm2", "start" , "index.js"]
-
-ADD docker-entrypoint.sh /run-ghost.sh
-
-RUN chmod +x /run-ghost.sh 
 
 #CMD ["sh","/run-ghost.sh"]
 CMD ["npm", "start"]
