@@ -25,7 +25,6 @@ WORKDIR $GHOST_SOURCE
                         unzip \
                         wget \
                         dialog \
-                        moment-timezone \
                          --no-install-recommends \ 
 
              && rm -rf /var/lib/apt/lists/*
