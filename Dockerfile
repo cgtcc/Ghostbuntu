@@ -42,14 +42,13 @@ WORKDIR $GHOST_SOURCE
         #&& npm install -g pm2 
         
         RUN set -x \
-        npm install --production
-
-        RUN set -x \
         && apt-get purge -y --auto-remove \
         && mv Ghost-${GHOST_VERSION}.zip ../
 
-        RUN  npm cache clean
-        RUN  rm -rf /tmp/npm*
+        RUN set -x \
+        && npm cache clean \
+        && rm -rf /tmp/npm* \
+        && npm install --production
 
 ENV GHOST_CONTENT  /var/lib/ghost
 
