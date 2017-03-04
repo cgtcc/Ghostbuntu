@@ -1,15 +1,29 @@
+
 #!/bin/bash
+set -e
 
+# allow the container to be started with `--user`
+if [[ "$*" == npm*start* ]] && [ "$(id -u)" = '0' ]; then
+	chown -R user "$GHOST_CONTENT"
+	exec gosu user "$BASH_SOURCE" "$@"
+fi
 
-###################################
-Author : thecodecoaster@gmail.com
-GitRepo: https://github.com/codecoaster/Ghostbuntu
-###################################
+if [[ "$*" == npm*start* ]]; then
+	baseDir="$GHOST_SOURCE/content"
+	for dir in "$baseDir"/*/ "$baseDir"/themes/*/; do
+		targetDir="$GHOST_CONTENT/${dir#$baseDir/}"
+		mkdir -p "$targetDir"
+		if [ -z "$(ls -A "$targetDir")" ]; then
+			tar -c --one-file-system -C "$dir" . | tar xC "$targetDir"
+		fi
+	done
 
-cd /usr/src/ghost;
+	if [ ! -e "$GHOST_CONTENT/config.js" ]; then
+		sed -r '
+			s/127\.0\.0\.1/0.0.0.0/g;
+			s!path.join\(__dirname, (.)/content!path.join(process.env.GHOST_CONTENT, \1!g;
+		' "$GHOST_SOURCE/config.example.js" > "$GHOST_CONTENT/config.js"
+	fi
+fi
 
-#for,production, you can also use : 
-#pm2 start -x index.js;
-
-npm start --production
-
+exec "$@"
