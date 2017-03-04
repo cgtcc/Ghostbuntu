@@ -41,7 +41,7 @@ Once Docker is installed, run those commands in a terminal :
 
 Now you need to compile your Docker image.  This process  will download the Ubuntu image, update it, and install every required dependencies for running Ghost.
 
-     docker build --no-cache -t ghostbuntu .
+     docker build -t ghostbuntu .
 
 ###4) Verify your new Docker instance 
 Now you can verify that the new image is on your computer and you can run it.
