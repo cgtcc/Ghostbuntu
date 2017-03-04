@@ -41,13 +41,9 @@ WORKDIR $GHOST_SOURCE
         #uncomment if require usage of pm2 instead of npm to fire up the blog        
         #RUN set -x \
         #&& npm install -g pm2 
-
-# As of v3.3.0 of npm (2015-08-13), using npm install --production will throw a warning:
-# Usage of the --production option is deprecated. Using the --only=prod instead.
-        
         
         RUN set -x \
-        npm install --only=prod
+        npm install --production
 
         RUN set -x \
         && apt-get purge -y --auto-remove \
